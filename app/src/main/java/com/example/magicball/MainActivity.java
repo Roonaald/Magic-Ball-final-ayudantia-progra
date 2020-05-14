@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private ImageView ball;
     private TextView respuesta;
-    private String [] respuestaArray = {"No lo se, tu dime","Quizas","No puedo responder eso","Probablemente","Afortunadamente si","no me cuentes tu vida crack",};
+    private String [] respuestaArray = {"No lo se, tu dime","Quizas","No puedo responder eso","Probablemente","Afortunadamente si","No me cuentes tu vida crack","Yo creo que si",
+    "No lo se, No me importa","Que pena tu vida","No cuentes con ello","F","Que triste","JA, no","Deja de perder tiempo","Ya valiste"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ball.setOnClickListener ((View.OnClickListener) this);
 
-        Toast.makeText(MainActivity.this, "Buscando algo!!!", Toast.LENGTH_LONG  ).show ();
+        Toast.makeText(MainActivity.this, "Bienvenido a la esfera magica!", Toast.LENGTH_LONG  ).show ();
+        Toast.makeText(MainActivity.this, "Piensa en una pregunta y luego presiona la esfera", Toast.LENGTH_LONG  ).show ();
+
 
     }
 
@@ -43,7 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                   respuesta.setText(respuestaArray[rand]);
                   break;
         }
+        Toast.makeText(MainActivity.this, "LA ESFERA A HABLADO!", Toast.LENGTH_SHORT  ).show ();
 
+        Toast.makeText(MainActivity.this, "PRUEBA OTRA VEZ", Toast.LENGTH_SHORT  ).show ();
+        Toast.makeText(MainActivity.this, "Piensa en una pregunta y luego presiona la esfera", Toast.LENGTH_SHORT  ).show ();
     }
 
 
